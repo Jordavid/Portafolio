@@ -34,6 +34,12 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #F5F5F5;
 }
 
 .menu__header{
@@ -64,15 +70,14 @@ a{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
+    margin: 3rem auto;
     max-width: 1200px;
     padding: 2rem;
 }
   
 .title__div {
     display: flex;
-    
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
 }
@@ -89,6 +94,7 @@ a{
 .title__subsection {
     font-size: 1.5rem;
     margin-bottom: 2rem;
+    color: #464646;
 }
 
 .title__network {
@@ -102,9 +108,7 @@ a{
 }
 
 .title__profile {
-    width: 40%;
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -306,9 +310,11 @@ a{
 @media (max-width: 768px) {
 
     /* Menú */
+    .menu{
+        position: static;
+    }
     .menu__list{
         display: none;
-        
     }
     .menu__list__item__contato{
         display: block;
@@ -398,6 +404,12 @@ a{
 @media (max-width: 427px) {
 
     /*Titulo*/
+    .title{
+        margin-top: -40px;
+    }
+    .title__network{
+        width: auto;
+    }
     .title__div{
         flex-direction: column-reverse;
         align-items: flex-start;
