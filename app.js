@@ -52,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         enviarFormulario(nombre, email, asunto, mensaje);
+        formularioVacio();
         alert('Mensaje Enviado');
         return true;
     });
@@ -64,3 +65,12 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log("Mensaje: " + mensaje);
     }
 });
+
+
+function formularioVacio(){
+    let vacioT = document.querySelectorAll('.formcontato__input');
+    vacioT.forEach(function(vacio){
+        vacio.value = '';
+    });
+    document.querySelector('.formcontato__textarea').value = '';
+}
