@@ -219,6 +219,7 @@ a{
     justify-content: center;
 }
 .experience__title{
+    width: 430px;
     font-family: Raleway;
     margin-bottom: -15px;
     margin-top: -8px;
