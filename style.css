@@ -203,6 +203,7 @@ a{
     gap: 15px;
     margin-top: 15px;
     margin-bottom: 40px;
+    margin-left: 20px;
 }
 .experience__box__reverse{
     display: flex;
